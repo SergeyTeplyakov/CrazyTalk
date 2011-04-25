@@ -1,0 +1,11 @@
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\bin\Debug\SimpleCrazyClient.exe
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\bin\Debug\SimpleCrazyClient.pdb
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\bin\Debug\CrazyTalk.Core.dll
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\bin\Debug\CrazyTalk.CrazyServer.dll
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\bin\Debug\DynamicXml.dll
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\bin\Debug\CrazyTalk.Core.pdb
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\bin\Debug\CrazyTalk.CrazyServer.pdb
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\bin\Debug\DynamicXml.pdb
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\obj\x86\Debug\SimpleCrazyClient.exe
+D:\Sources\CrazyTalk\CrazyTalk.Net\Client\SimpleCrazyClient\obj\x86\Debug\SimpleCrazyClient.pdb

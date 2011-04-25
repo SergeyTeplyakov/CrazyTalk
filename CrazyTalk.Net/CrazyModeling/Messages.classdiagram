@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="604a7fc4-caa4-4dc5-8738-18d4fcb9cb0e" name="UMLClassDiagram1" linkedPackageId="47d247dd-5dbd-4a5e-b178-ce9ff6133134" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e3ea59d5-73f7-4826-a261-03cf0e381abd">
+      <profileInstance Id="1922e798-9ee1-426b-80ef-c1cfd76c7364" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9a97d853-e9fa-4791-8907-eeb71269160d">
+      <profileInstance Id="c7421c77-d67f-450c-a25e-b219a367bbba" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8287591f-c15e-40dd-861a-f68e112380da" name="Message" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a41e9a4d-5b9a-486f-a533-f9f72e2fab4c" />
+        <targetEnds>
+          <association Id="8186817b-37fe-433d-84a9-31456fc4c3bc" isDerived="false" sourceEndRoleName="Message" targetEndRoleName="Command" isLeaf="false" isAbstract="false">
+            <classMoniker Id="bd64463a-0bbf-47f0-aa42-327ee408452e" LastKnownName="Command" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6abef47a-91d3-4b0f-86c6-b72bb7443c92" name="Message" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7337ff97-752d-475c-94d4-63c0d8b4277f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e81aac61-4a9e-464c-8ca6-c0ea605bbc0f" name="Command" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="b9f66e39-229b-4280-aee3-c0a14c4964f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2a389f9b-6236-4566-8b3b-296b494d78e0" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e3ea35fb-ddd6-427e-822b-c4046810c17f" name="Version" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2dce8bc2-8385-42d8-9299-706f5b39f8c9" />
+          </property>
+          <property Id="efdef355-f5ff-4d74-a6ee-60141edbc9ed" name="MessageId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a9d0e677-e3d9-48f3-a1d4-f51cc5ef15ea" />
+          </property>
+          <property Id="0024b1c6-0f65-4507-a922-6c25d3044d0c" name="Command" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="93ab7888-e2b8-4598-8334-c959298ffe34" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bd64463a-0bbf-47f0-aa42-327ee408452e" name="Command" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="76e84c98-292a-49ea-a438-f1b962879760" />
+        <targetEnds>
+          <association Id="a58582de-838f-4c7e-8f2a-057feb9f7b44" isDerived="false" sourceEndRoleName="Command" targetEndRoleName="CommandType" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="7f7f69f7-6a82-4890-b973-f4529b1567f2" LastKnownName="CommandType" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b550f824-6923-4c4b-b7e0-366a996bafa3" name="Command" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="09b2af54-c30c-44a6-80a9-3ed6ebad34b5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ac011f8-eebb-4024-97b2-4e813c393b37" name="CommandType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="348db372-c5b0-4792-abb5-0882426cc2c1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e9caa588-e60b-49fa-a92c-56f5f3bf8a13" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="755f7212-c39c-4ca8-9b3e-c9df86039b35" name="CommandType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="357351e4-e78c-4b15-beff-a3db8f84afe5" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="7f7f69f7-6a82-4890-b973-f4529b1567f2" name="CommandType" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8d31a684-fd36-446e-9b4a-18325b8f83f3" />
+        <ownedLiterals>
+          <enumerationLiteral Id="d568cb6a-075b-4610-98aa-9ce31220560b" name="Login">
+            <elementDefinition Id="26616323-c406-4b6b-aee7-93416b5a5198" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="59a875b7-fcc6-48fa-9ad9-9451adedac54" name="Ack">
+            <elementDefinition Id="05571f31-4d8a-48aa-8c3f-f3a52c39c4cc" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="a738112e-4182-4797-ab7c-97151cc0ffa1" name="UserStateChanged">
+            <elementDefinition Id="14eb6dd2-ae8b-4c5a-81b4-6182d23f9c57" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="8fbc71a5-4cac-45af-90e6-cce2165fa486" name="TextMessage">
+            <elementDefinition Id="e0293a0c-d55e-4d26-b2c6-39d5b9f44545" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="704069f9-f326-49fd-91ae-3dd94ffa83eb" name="LoginCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dc2b1957-9217-46c2-acb2-e185a7f1ee0d" />
+        <generalsInternal>
+          <generalization Id="5a9a6af2-f51c-460a-9c29-a2e2fd25c0c2" isSubstitutable="false">
+            <classMoniker Id="bd64463a-0bbf-47f0-aa42-327ee408452e" LastKnownName="Command" />
+            <elementDefinition Id="a185760c-4906-43e0-93c1-7bb3777e641a" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="ddfed303-9694-49e9-a692-52d7435d5e89" isDerived="false" sourceEndRoleName="LoginCommand" targetEndRoleName="UserInfo" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c19cbd3a-d4b7-45e7-a102-b3cd1b64b351" LastKnownName="UserInfo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3146d495-a5f0-4465-b131-9daa6f689fe2" name="LoginCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b79e9d1a-9a17-481e-97f6-5a683b4097ac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc0eed05-45ce-42a8-bc4f-7e68fb77dbc6" name="UserInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="62ce1216-a488-4707-9e90-38f04cf3c262" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="30e68a0c-e787-4b14-9870-546e8bea08bf" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="86e048d6-0b81-41d1-98b8-c53896e283b2" name="UserInfo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8c29c2b6-8ff9-49da-9956-902c0a2c6267" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c19cbd3a-d4b7-45e7-a102-b3cd1b64b351" name="UserInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7ddd0cf5-5d45-4ebb-b9b8-6d8c6f48dd20" />
+        <ownedAttributesInternal>
+          <property Id="61b7ff59-1509-4157-9f03-628bf719a71c" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7a626b25-b230-41fd-b70d-b9be48d264e3" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="318ac3a1-fdda-40b6-b18d-911c04859ee4" name="AckCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ca460d8d-5392-4259-8cbd-8ee568228f0b" />
+        <generalsInternal>
+          <generalization Id="0a0dc299-4dfc-41ce-a073-b8e81a26fa26" isSubstitutable="false">
+            <classMoniker Id="bd64463a-0bbf-47f0-aa42-327ee408452e" LastKnownName="Command" />
+            <elementDefinition Id="01ab9507-deed-4977-87f4-9ef49541fac1" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="c8046cbe-f896-41df-9f54-8d9d10399886" name="MessageId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6ebb99b7-b219-46f0-9b9f-ceb0334429d0" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c0cf02d0-53b2-4824-b936-c419956c7662" name="UserStateCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4c427c14-5379-482f-8640-fe6e875b290f" />
+        <generalsInternal>
+          <generalization Id="ce99b683-7b52-429a-a5f7-bb8896715f5d" isSubstitutable="false">
+            <classMoniker Id="bd64463a-0bbf-47f0-aa42-327ee408452e" LastKnownName="Command" />
+            <elementDefinition Id="0602baa2-4a5e-4d52-bdb3-ce60a1531d27" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="6e020d4b-0efc-42d6-8e0a-914ba1cd1a4f" isDerived="false" sourceEndRoleName="UserStateCommand" targetEndRoleName="UserInfo" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c19cbd3a-d4b7-45e7-a102-b3cd1b64b351" LastKnownName="UserInfo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29bdbc89-38a9-4a8d-8355-b04bc7eb9f32" name="UserStateCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e68e3332-f6c5-4ca4-b6f9-4eb1ff5022a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8f7aaee2-8375-4689-8225-2264413a29f7" name="UserInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="5c7275a5-f81b-4849-8458-c9a91d7a514c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9cf39d91-0bab-43b1-8ac0-e57ef3b03c5b" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9771e1d9-9851-4a1c-9326-f54d9f6ab75c" name="UserInfo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d71e9623-aa4e-46b2-8d82-cc38421b125f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="eaf4ec04-93be-492e-8c2f-2e4eb5d28a42" name="TextMessageCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99de8dcb-98e4-4190-927b-ec0a7581d31f" />
+        <generalsInternal>
+          <generalization Id="c0c6b484-dab3-48c2-8798-8aaf51aea387" isSubstitutable="false">
+            <classMoniker Id="bd64463a-0bbf-47f0-aa42-327ee408452e" LastKnownName="Command" />
+            <elementDefinition Id="b75351ff-f847-41a9-a16f-15fccd521559" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="c1be9ea0-9759-4161-8d58-fe11152012e6" isDerived="false" sourceEndRoleName="TextMessageCommand" targetEndRoleName="UserInfo" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c19cbd3a-d4b7-45e7-a102-b3cd1b64b351" LastKnownName="UserInfo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c5ac593-195c-41a1-ab39-1fc495e01e49" name="TextMessageCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2dcb4da0-e90f-488a-b2ee-8aa304f8f785" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="507adb0a-3172-45ea-989c-6d8a315c96c1" name="UserInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="24867650-d451-4eba-8ac0-06ff2e25158a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="99e7a1cc-97bc-44a1-b64a-68a17f664d4c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="33aa20b1-98c7-4622-b13a-d30de8152568" name="From" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="41a10b66-76c9-459e-a2f8-a1cb3453cc37" />
+          </property>
+          <property Id="b072c4da-595f-449d-b60d-1cfedcdf8706" name="To" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7701954f-7514-4eb9-ac37-be603c78b434" />
+          </property>
+          <property Id="7512b5bf-a470-42e6-abc8-46e6bcc02043" name="Message" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e88e08eb-4625-467f-9a9f-f314c3e70e78" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="47d247dd-5dbd-4a5e-b178-ce9ff6133134" name="CrazyModeling">
+    <elementDefinition Id="a46f82ee-b218-451b-9b75-67c378562e07" />
+  </package>
+</logicalClassDesignerModel>
