@@ -16,6 +16,7 @@ using System.Diagnostics.Contracts;
 namespace CrazyTalk.Core.Utils
 {
     // TODO: Add unit tests for this class
+    // TODO: Move this class into separete utility assembly
 
     /// <summary>
     /// Static helper class with usefull extensions methods for ReaderWriterLockSlim.

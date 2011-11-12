@@ -29,8 +29,8 @@ namespace CrazyTalk.Core.Messages
         {
             var sb = new StringBuilder();
             sb.AppendFormat("Version: {0}", Version).AppendLine()
-                .AppendFormat("Message Id: {0}", Id).AppendLine()
-                .AppendFormat("{0}", Command);
+              .AppendFormat("Message Id: {0}", Id).AppendLine()
+              .AppendFormat("{0}", Command);
             return sb.ToString();
         }
     }
